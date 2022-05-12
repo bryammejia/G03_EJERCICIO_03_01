@@ -22,8 +22,8 @@ public JPanel panel;
 
     public Ventana2(String title) {
         this.setTitle(title);
-        this.setSize(new Dimension(250, 160));
-        this.setLocation(new Point(10, 10));
+        this.setSize(new Dimension(300, 160));
+        this.setLocation(new Point(300, 10));
         iniciarComponentes();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -48,19 +48,19 @@ public JPanel panel;
         panel.add(boton1);
         
         JButton boton2 = new JButton();
-        boton2.setText("Button 2");
+        boton2.setText("Button 3");
         boton2.setBounds(0, 40, 100, 40);
         boton2.setEnabled(true);
         panel.add(boton2);
         
         JButton boton3 = new JButton();
-        boton3.setText("2");
+        boton3.setText("Button 5");
         boton3.setBounds(100, 40, 50, 40);
         boton3.setEnabled(true);
         panel.add(boton3);
         
         JButton boton4 = new JButton();
-        boton4.setText("Button 5");
+        boton4.setText("2");
         boton4.setBounds(150, 40, 100, 40);
         boton4.setEnabled(true);
         panel.add(boton4);
