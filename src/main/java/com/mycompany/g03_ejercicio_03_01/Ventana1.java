@@ -1,5 +1,6 @@
 package com.mycompany.g03_ejercicio_03_01;
 
+import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.Color;
 import java.util.ArrayList;
@@ -8,7 +9,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.GridLayout;
 import java.awt.Point;
+import java.util.Locale;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
@@ -31,45 +34,41 @@ public class Ventana1 extends JFrame {
 
     private void colocarPaneles() {
         panel = new JPanel();
-        panel.setLayout(null);
         this.getContentPane().add(panel);
+        this.panel.setLayout(new BorderLayout());
     }
 
-    private void iniciarComponentes() {
+    public void iniciarComponentes() {
         colocarPaneles();
         colocarBotones();
+
     }
 
-    private void colocarBotones() {
+    public void colocarBotones() {
         JButton boton1 = new JButton();
         boton1.setText("Button 1");
-        boton1.setBounds(0, 0, 250, 40);
+        panel.add(boton1, BorderLayout.NORTH);
         boton1.setEnabled(true);
-        panel.add(boton1);
-        
+
         JButton boton2 = new JButton();
-        boton2.setText("Button 2");
-        boton2.setBounds(0, 40, 100, 40);
+        boton2.setText("2");
+        panel.add(boton2, BorderLayout.CENTER);
         boton2.setEnabled(true);
-        panel.add(boton2);
-        
+
         JButton boton3 = new JButton();
-        boton3.setText("2");
-        boton3.setBounds(100, 40, 50, 40);
-        boton3.setEnabled(true);
-        panel.add(boton3);
-        
+        boton3.setText("Button 5");
+        panel.add(boton3, BorderLayout.EAST);
+        boton2.setEnabled(true);
+
         JButton boton4 = new JButton();
-        boton4.setText("Button 5");
-        boton4.setBounds(150, 40, 100, 40);
-        boton4.setEnabled(true);
-        panel.add(boton4);
-        
+        boton4.setText("Button 3");
+        panel.add(boton4, BorderLayout.WEST);
+        boton2.setEnabled(true);
+
         JButton boton5 = new JButton();
         boton5.setText("Long-Named Button 4");
-        boton5.setBounds(0, 80, 250, 40);
         boton5.setEnabled(true);
-        panel.add(boton5);
+        panel.add(boton5, BorderLayout.SOUTH);
 
     }
 
