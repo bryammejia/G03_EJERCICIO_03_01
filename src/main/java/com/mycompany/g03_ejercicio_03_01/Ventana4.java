@@ -77,7 +77,7 @@ public class Ventana4 extends JFrame {
     public void iniciarBandera() {
    
         this.jPanelBandera = new JPanel();
-        this.jPanelBandera.setLayout(new GridLayout(49,49));
+        this.jPanelBandera.setLayout(new GridLayout(7,7));
         
         this.jLabelBanderaList = new ArrayList<>();
         for (var i = 0; i < 49; i++)

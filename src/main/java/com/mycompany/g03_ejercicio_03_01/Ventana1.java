@@ -58,12 +58,12 @@ public class Ventana1 extends JFrame {
         JButton boton3 = new JButton();
         boton3.setText("Button 5");
         panel.add(boton3, BorderLayout.EAST);
-        boton2.setEnabled(true);
+        boton3.setEnabled(true);
 
         JButton boton4 = new JButton();
         boton4.setText("Button 3");
         panel.add(boton4, BorderLayout.WEST);
-        boton2.setEnabled(true);
+        boton4.setEnabled(true);
 
         JButton boton5 = new JButton();
         boton5.setText("Long-Named Button 4");
