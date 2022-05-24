@@ -39,7 +39,7 @@ public class Ventana1 extends JFrame {
     }
 
     public void iniciarComponentes() {
-        colocarPaneles();
+        colocarPaneles();   
         colocarBotones();
 
     }
